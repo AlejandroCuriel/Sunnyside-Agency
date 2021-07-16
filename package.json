@@ -1,0 +1,27 @@
+{
+  "name": "sunnyside-agency",
+  "version": "1.0.0",
+  "description": "practicando front-end ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp",
+    "Web",
+    "Desing"
+  ],
+  "author": "Alejandro Curiel",
+  "license": "ISC",
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.35.2"
+  },
+  "dependencies": {
+    "gulp-notify": "^4.0.0"
+  }
+}
