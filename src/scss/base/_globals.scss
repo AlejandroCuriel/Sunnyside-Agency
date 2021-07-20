@@ -1,10 +1,11 @@
-html{
+html {
     box-sizing: border-box;
     font-size: 62.5%; //Reiniciamos los REMS a 10px
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
-body{
+
+body {
     font-size: 18px;
 }
