@@ -1,6 +1,98 @@
 body{
-    background-color: rgb(85, 175, 202);
+  background-color: #fff;
 }
-h1{
-    color: green;
+
+.header{
+  height: 100vh;
+
+  @include phone{
+    background-image: url('/build/img/mobile/image-header.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @include tablet{
+    background-image: url('/build/img/desktop/image-header.jpg');
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  p{
+    
+    color: #fff;
+    font-family: $secondary-font;
+    font-size: 5rem;
+    font-weight: $black;
+    letter-spacing: .8rem;
+    margin-top: 20rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include phone{
+      font-size: 4rem;
+      margin-top: 5rem;
+    }
+
+  }
+
+  .arrow{
+    bottom: -70px;
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    @include phone{
+    bottom: 0px;
+    }
+  }
+}
+
+.header__contenido{
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-family: $title-font;
+  font-weight: $black;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.header__nav{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+
+  a{
+    color: #fff;
+    padding: 1.2rem 2.2rem;
+
+    &:last-child{
+      background-color: #fff;
+      border-radius: 20px;
+      color: #000;
+      font-family: $secondary-font;
+      font-weight: $bold;
+      text-transform: uppercase;
+    }  
+  }
+}
+.desktop{
+  @include phone{
+    display: none;
+  }
+
+  @include tablet{
+    display: block;
+  }
+}
+.mobile {
+  img:hover{
+    cursor: pointer;
+  }
+
+  @include tablet{
+    display: none;
+  }
 }
