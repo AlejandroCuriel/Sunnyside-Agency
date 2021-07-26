@@ -6,7 +6,8 @@ sass.compiler = require('sass');
 
 const paths = {
     url_scss: 'src/scss/**/*.scss',
-    url_images: 'src/images/**/*.jpg'
+    url_images: 'src/images/**/*.jpg',
+    url_images_svg: 'src/images/**/*.svg'
 }
 
 function compilarSass(){
@@ -15,7 +16,7 @@ function compilarSass(){
         .pipe( dest("./build/css"))
 }
 function minificarImagenes(){
-    return src(paths.url_images)
+    return src([paths.url_images, paths.url_images_svg])
         .pipe( imagemin())
         .pipe( dest('./build/img'))
         .pipe( notify("Imagen Minificada"))

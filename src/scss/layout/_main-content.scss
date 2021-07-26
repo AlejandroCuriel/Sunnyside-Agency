@@ -1,127 +1,144 @@
-.main{
+.main {
   background-color: $white;
-  .main__image--desktop{
+
+  .main__image--desktop {
     display: none;
   }
-  @include tablet{
-    .main__image--mobile{
+
+  @include tablet {
+    .main__image--mobile {
       display: none;
     }
-    .main__image--desktop{
+
+    .main__image--desktop {
       display: block;
     }
   }
 }
 
-.main__transform{
+.main__transform {
   display: flex;
   flex-direction: column-reverse;
-  @include tablet{
+
+  @include tablet {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  @include desktop{
-    img{
+
+  @include desktop {
+    img {
       height: 44vw;
     }
   }
 }
 
-.main__container{
+.main__container {
   margin-bottom: 5rem;
   margin-top: 4rem;
   text-align: center;
-  @include tablet{
+
+  @include tablet {
     margin: auto;
     text-align: start;
     width: 68%;
   }
-  h2{
+
+  h2 {
     font-family: $secondary-font;
     font-weight: $black; 
   }
-    p{
-      color: $dark-grayish-blue;
-      font-family: sans-serif;
-    }
-    a{
-      color: black;
-      display: block;
-      font-family: $secondary-font;
-      margin-top: 4rem;
-      margin: 0 auto;
-      padding: 0 2rem;
-      text-decoration-color: $pink;
-      text-decoration-skip-ink: none;
-      text-decoration-thickness: 7px;
-      text-decoration:underline;
-      text-transform: uppercase;
-      text-underline-offset: -3px;
-    }
+
+  p {
+    color: $dark-grayish-blue;
+    font-family: sans-serif;
+  }
+
+  a {
+    color: black;
+    display: block;
+    font-family: $secondary-font;
+    margin-top: 4rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-decoration-color: $soft-red;
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 7px;
+    text-transform: uppercase;
+    text-underline-offset: -3px;
+  }
 }
 
-.main__standOut{
+.main__standOut {
   display: flex;
   flex-direction: column-reverse;
-  @include tablet{
+
+  @include tablet {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    section{
+
+    section {
       grid-column: 2;
     }
-    img{
+
+    img {
       grid-column: 1;
       grid-row: 1;
     }
   }
-  @include desktop{
-    img{
+
+  @include desktop {
+    img {
       height: 44vw;
     }
   }
 }
 
-.fruits{
-  @include tablet{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+.fruits {
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .main__container{
-    @include tablet{
+
+  .main__container {
+    @include tablet {
       margin: auto auto 2rem auto;
       text-align: center;
       width: 90%;
 
-      p{
+      p {
         margin: 0 auto;
       }
     }
-    @include desktop{
+
+    @include desktop {
       margin: auto auto 3rem auto;
-      p{
+
+      p {
         width: 70%;
         margin: 0 auto;
       }
-
     }
   }
 }
 
-.main__graphic{
+.fruits__main--graphic {
   background-image: url('/build/img/mobile/image-graphic-design.jpg');
-  @include tablet{
+  
+  @include tablet {
     background-image: url('/build/img/desktop/image-graphic-design.jpg');
   }
 }
 
-.main__photography{
+.fruits__main--photography {
   background-image: url('/build/img/mobile/image-photography.jpg');
-  @include tablet{
+  
+  @include tablet {
     background-image: url('/build/img/desktop/image-photography.jpg');
   }
 }
 
-.idk{
+.fruits__content {
   align-items: flex-end;
   background-position: center;
   background-repeat: no-repeat;
@@ -129,21 +146,24 @@
   display: flex;
   height: 160vw;
   
-  @include tablet{
+  @include tablet {
     align-items: flex-start;
     height: 41.7vw;
   }
-  @include desktop{
+
+  @include desktop {
     align-items: flex-start;
     height: 41.4vw;
   }
-  h3{
+
+  h3 {
     color: $dark-blue;
     font-family: $secondary-font;
     font-weight: $black;
     text-transform: capitalize;
   }
-  p{
+
+  p {
     color: $dark-blue;
     font-family:sans-serif;
     font-weight: 600;

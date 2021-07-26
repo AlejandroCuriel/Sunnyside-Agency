@@ -1,98 +1,111 @@
-body{
-  background-color: #fff;
+body {
+  background-color: rgb(85, 175, 202);
 }
 
-.header{
-  height: 100vh;
+.header {
+  height: 143.7vw;
 
-  @include phone{
+  @include phone {
     background-image: url('/build/img/mobile/image-header.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
-  @include tablet{
+  @include tablet {
     background-image: url('/build/img/desktop/image-header.jpg');
     background-position: bottom;
     background-size: cover;
+    height: 100vh;
   }
 
-  p{
-    
-    color: #fff;
+  p {
+    color: $white;
     font-family: $secondary-font;
     font-size: 5rem;
-    font-weight: $black;
+    font-weight: $bolder;
     letter-spacing: .8rem;
     margin-top: 20rem;
     text-align: center;
     text-transform: uppercase;
 
-    @include phone{
+    @include phone {
       font-size: 4rem;
       margin-top: 5rem;
     }
-
   }
 
-  .arrow{
+  .arrow {
     bottom: -70px;
     display: block;
     height: 100px;
     margin: 0 auto;
     position: relative;
     @include phone{
-    bottom: 0px;
+      bottom: 0px;
     }
   }
 }
 
-.header__contenido{
+.header__content {
   align-items: center;
-  color: #fff;
+  color: $white;
   display: flex;
   font-family: $title-font;
-  font-weight: $black;
+  font-weight: $bolder;
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 2rem;
+
+  @include phone {
+    width: 85%;
+  }
+
+  @include tablet {
+    width: 95%;
+  }
 }
 
-.header__nav{
+.header__nav {
   display: flex;
   justify-content: space-between;
-  width: 500px;
-
-  a{
-    color: #fff;
+  
+  a {
+    color: $white;
     padding: 1.2rem 2.2rem;
+    text-decoration: none;
 
-    &:last-child{
-      background-color: #fff;
+    &:last-child {
+      background-color: $white;
       border-radius: 20px;
-      color: #000;
+      color: $black;
       font-family: $secondary-font;
       font-weight: $bold;
       text-transform: uppercase;
     }  
   }
+
+  @include tablet {
+    width: 500px;
+  }
 }
-.desktop{
-  @include phone{
+
+.header__nav--desktop {
+  @include phone {
     display: none;
   }
 
-  @include tablet{
+  @include tablet {
     display: block;
   }
 }
-.mobile {
-  img:hover{
+
+.header__nav--mobile {
+  img:hover {
     cursor: pointer;
   }
 
-  @include tablet{
+  @include tablet {
     display: none;
   }
 }

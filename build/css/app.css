@@ -5,6 +5,9 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -385,11 +388,11 @@ a {
 }
 
 body {
-  background-color: #fff;
+  background-color: #55afca;
 }
 
 .header {
-  height: 100vh;
+  height: 143.7vw;
 }
 @media (min-width: 360px) {
   .header {
@@ -404,10 +407,11 @@ body {
     background-image: url("/build/img/desktop/image-header.jpg");
     background-position: bottom;
     background-size: cover;
+    height: 100vh;
   }
 }
 .header p {
-  color: #fff;
+  color: white;
   font-family: "Fraunces", serif;
   font-size: 5rem;
   font-weight: 900;
@@ -435,9 +439,9 @@ body {
   }
 }
 
-.header__contenido {
+.header__content {
   align-items: center;
-  color: #fff;
+  color: white;
   display: flex;
   font-family: "Lato", sans-serif;
   font-weight: 900;
@@ -445,41 +449,56 @@ body {
   margin: 0 auto;
   padding-top: 2rem;
 }
+@media (min-width: 360px) {
+  .header__content {
+    width: 85%;
+  }
+}
+@media (min-width: 768px) {
+  .header__content {
+    width: 95%;
+  }
+}
 
 .header__nav {
   display: flex;
   justify-content: space-between;
-  width: 500px;
 }
 .header__nav a {
-  color: #fff;
+  color: white;
   padding: 1.2rem 2.2rem;
+  text-decoration: none;
 }
 .header__nav a:last-child {
-  background-color: #fff;
+  background-color: white;
   border-radius: 20px;
-  color: #000;
+  color: black;
   font-family: "Fraunces", serif;
   font-weight: 700;
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  .header__nav {
+    width: 500px;
+  }
+}
 
 @media (min-width: 360px) {
-  .desktop {
+  .header__nav--desktop {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  .desktop {
+  .header__nav--desktop {
     display: block;
   }
 }
 
-.mobile img:hover {
+.header__nav--mobile img:hover {
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .mobile {
+  .header__nav--mobile {
     display: none;
   }
 }
@@ -529,7 +548,7 @@ body {
 }
 .main__container h2 {
   font-family: "Fraunces", serif;
-  font-weight: 900;
+  font-weight: black;
 }
 .main__container p {
   color: #5a636c;
@@ -542,10 +561,10 @@ body {
   margin-top: 4rem;
   margin: 0 auto;
   padding: 0 2rem;
-  text-decoration-color: #ffded6;
+  text-decoration-color: #fe7867;
+  text-decoration-line: underline;
   text-decoration-skip-ink: none;
   text-decoration-thickness: 7px;
-  text-decoration: underline;
   text-transform: uppercase;
   text-underline-offset: -3px;
 }
@@ -599,25 +618,25 @@ body {
   }
 }
 
-.main__graphic {
+.fruits__main--graphic {
   background-image: url("/build/img/mobile/image-graphic-design.jpg");
 }
 @media (min-width: 768px) {
-  .main__graphic {
+  .fruits__main--graphic {
     background-image: url("/build/img/desktop/image-graphic-design.jpg");
   }
 }
 
-.main__photography {
+.fruits__main--photography {
   background-image: url("/build/img/mobile/image-photography.jpg");
 }
 @media (min-width: 768px) {
-  .main__photography {
+  .fruits__main--photography {
     background-image: url("/build/img/desktop/image-photography.jpg");
   }
 }
 
-.idk {
+.fruits__content {
   align-items: flex-end;
   background-position: center;
   background-repeat: no-repeat;
@@ -626,24 +645,24 @@ body {
   height: 160vw;
 }
 @media (min-width: 768px) {
-  .idk {
+  .fruits__content {
     align-items: flex-start;
     height: 41.7vw;
   }
 }
 @media (min-width: 1200px) {
-  .idk {
+  .fruits__content {
     align-items: flex-start;
     height: 41.4vw;
   }
 }
-.idk h3 {
+.fruits__content h3 {
   color: #19536b;
   font-family: "Fraunces", serif;
-  font-weight: 900;
+  font-weight: black;
   text-transform: capitalize;
 }
-.idk p {
+.fruits__content p {
   color: #19536b;
   font-family: sans-serif;
   font-weight: 600;
