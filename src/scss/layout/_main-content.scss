@@ -104,15 +104,24 @@
     @include tablet {
       margin: auto auto 2rem auto;
       text-align: center;
-      width: 90%;
-
+      width: 100%;
+      font-size: 1.6rem;
+      
       p {
+        margin: 0 auto;
+      }
+    }
+    
+    @include laptop {
+      width: 100%;
+      p {
+        width: 85%;
         margin: 0 auto;
       }
     }
 
     @include desktop {
-      margin: auto auto 3rem auto;
+      margin: auto auto 10rem auto;
 
       p {
         width: 70%;
@@ -149,6 +158,11 @@
   @include tablet {
     align-items: flex-start;
     height: 41.7vw;
+  }
+
+  @include laptop {
+    align-items: flex-start;
+    height: 41.2vw;
   }
 
   @include desktop {

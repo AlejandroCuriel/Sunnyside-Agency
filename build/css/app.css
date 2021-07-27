@@ -528,7 +528,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .main__transform img {
     height: 44vw;
   }
@@ -586,7 +586,7 @@ body {
     grid-row: 1;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .main__standOut img {
     height: 44vw;
   }
@@ -602,7 +602,8 @@ body {
   .fruits .main__container {
     margin: auto auto 2rem auto;
     text-align: center;
-    width: 90%;
+    width: 100%;
+    font-size: 1.6rem;
   }
   .fruits .main__container p {
     margin: 0 auto;
@@ -610,7 +611,16 @@ body {
 }
 @media (min-width: 1200px) {
   .fruits .main__container {
-    margin: auto auto 3rem auto;
+    width: 100%;
+  }
+  .fruits .main__container p {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1600px) {
+  .fruits .main__container {
+    margin: auto auto 10rem auto;
   }
   .fruits .main__container p {
     width: 70%;
@@ -651,6 +661,12 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .fruits__content {
+    align-items: flex-start;
+    height: 41.2vw;
+  }
+}
+@media (min-width: 1600px) {
   .fruits__content {
     align-items: flex-start;
     height: 41.4vw;
