@@ -351,6 +351,7 @@ html {
 
 body {
   font-size: 18px;
+  background-color: #fff9f5;
 }
 
 img {
@@ -383,12 +384,17 @@ a {
   margin: 0 auto;
 }
 
-.mg-top-bot-3 {
-  margin: 3rem 0;
+.mg-top-bot-5 {
+  margin: 5rem 0;
 }
 
-body {
-  background-color: #55afca;
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header {
@@ -683,4 +689,75 @@ body {
   font-family: sans-serif;
   font-weight: 600;
   line-height: 1.7;
+}
+
+.testimonials {
+  color: #5a636c;
+  font-family: "Barlow", sans-serif;
+}
+.testimonials h2 {
+  color: #a7abae;
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+@media (min-width: 1600px) {
+  .testimonials h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 360px) {
+  .testimonials .d-flex {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .testimonials .d-flex {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonials__content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.testimonials__container p {
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+@media (min-width: 1200px) {
+  .testimonials__container p {
+    font-size: 1.8rem;
+    margin-bottom: 8rem;
+  }
+}
+@media (min-width: 1600px) {
+  .testimonials__container p {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .testimonials__container {
+    flex-basis: calc(33.3% - 2rem);
+  }
+}
+.testimonials__container .testimonials__container--name {
+  color: black;
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: bolder;
+}
+.testimonials__container img {
+  border-radius: 50%;
+  margin: 3rem 0;
+}
+.testimonials__container .testimonials__container--job {
+  color: #a7abae;
+  display: block;
+  margin-top: 2rem;
 }
