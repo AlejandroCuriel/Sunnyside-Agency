@@ -1,11 +1,37 @@
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; //Reiniciamos los REMS a 10px
+  box-sizing: border-box;
+  font-size: 62.5%; //Reiniciamos los REMS a 10px
 }
 *, *:before, *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    font-size: 18px;
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@include desktop {
+  h1 {
+    font-size: 4.5rem;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3.4rem;
+  }
+
+  p {
+    font-size: 2.2rem;
+  }
 }

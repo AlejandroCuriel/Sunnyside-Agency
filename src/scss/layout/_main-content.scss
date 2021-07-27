@@ -1,0 +1,172 @@
+.main {
+  background-color: $white;
+
+  .main__image--desktop {
+    display: none;
+  }
+
+  @include tablet {
+    .main__image--mobile {
+      display: none;
+    }
+
+    .main__image--desktop {
+      display: block;
+    }
+  }
+}
+
+.main__transform {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    img {
+      height: 44vw;
+    }
+  }
+}
+
+.main__container {
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+  text-align: center;
+
+  @include tablet {
+    margin: auto;
+    text-align: start;
+    width: 68%;
+  }
+
+  h2 {
+    font-family: $secondary-font;
+    font-weight: $black; 
+  }
+
+  p {
+    color: $dark-grayish-blue;
+    font-family: sans-serif;
+  }
+
+  a {
+    color: black;
+    display: block;
+    font-family: $secondary-font;
+    margin-top: 4rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-decoration-color: $soft-red;
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 7px;
+    text-transform: uppercase;
+    text-underline-offset: -3px;
+  }
+}
+
+.main__standOut {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    section {
+      grid-column: 2;
+    }
+
+    img {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+
+  @include desktop {
+    img {
+      height: 44vw;
+    }
+  }
+}
+
+.fruits {
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main__container {
+    @include tablet {
+      margin: auto auto 2rem auto;
+      text-align: center;
+      width: 90%;
+
+      p {
+        margin: 0 auto;
+      }
+    }
+
+    @include desktop {
+      margin: auto auto 3rem auto;
+
+      p {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.fruits__main--graphic {
+  background-image: url('/build/img/mobile/image-graphic-design.jpg');
+  
+  @include tablet {
+    background-image: url('/build/img/desktop/image-graphic-design.jpg');
+  }
+}
+
+.fruits__main--photography {
+  background-image: url('/build/img/mobile/image-photography.jpg');
+  
+  @include tablet {
+    background-image: url('/build/img/desktop/image-photography.jpg');
+  }
+}
+
+.fruits__content {
+  align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  height: 160vw;
+  
+  @include tablet {
+    align-items: flex-start;
+    height: 41.7vw;
+  }
+
+  @include desktop {
+    align-items: flex-start;
+    height: 41.4vw;
+  }
+
+  h3 {
+    color: $dark-blue;
+    font-family: $secondary-font;
+    font-weight: $black;
+    text-transform: capitalize;
+  }
+
+  p {
+    color: $dark-blue;
+    font-family:sans-serif;
+    font-weight: 600;
+    line-height: 1.7;
+  }
+}
