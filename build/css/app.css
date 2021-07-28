@@ -378,6 +378,10 @@ a {
     font-size: 2.2rem;
   }
 }
+picture {
+  display: flex;
+}
+
 .content {
   width: 90%;
   margin: 0 auto;
@@ -683,4 +687,23 @@ body {
   font-family: sans-serif;
   font-weight: 600;
   line-height: 1.7;
+}
+
+.images__four {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.images__four .images__four--desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .images__four {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .images__four .images__four--desktop {
+    display: block;
+  }
+  .images__four .images__four--mobile {
+    display: none;
+  }
 }

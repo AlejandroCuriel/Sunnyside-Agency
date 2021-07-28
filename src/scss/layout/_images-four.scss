@@ -1,0 +1,20 @@
+.images__four {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .images__four--desktop {
+    display: none;
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(4, 1fr);
+
+    .images__four--desktop {
+      display: block;
+    }
+    
+    .images__four--mobile {
+      display: none;
+    }
+  }
+}
