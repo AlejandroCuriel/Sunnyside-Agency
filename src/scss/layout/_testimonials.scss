@@ -1,0 +1,71 @@
+.testimonials {
+  color: $dark-grayish-blue;
+  font-family: $main-font;
+
+  h2 {
+    color: $grayish-blue;
+    font-family: $secondary-font;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    @include desktop {
+      font-size: 2.5rem;
+    }
+  }
+
+  .d-flex {
+    @include phone {
+      display: block;
+    }
+    @include laptop {
+      display: flex;
+    }
+  }
+}
+
+.testimonials__content {
+  @include laptop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.testimonials__container {
+  p {
+    font-size: 1.7rem;
+    line-height: 3rem;
+
+    @include laptop {
+      font-size: 1.8rem;
+      margin-bottom: 8rem;
+    }
+
+    @include desktop {
+      font-size: 2.2rem;
+    }
+  }
+
+  @include laptop {
+    flex-basis: calc(33.3% - 2rem);
+  }
+
+  .testimonials__container--name {
+    color: $black;
+    font-family: $secondary-font;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bolder;
+  }
+
+  img {
+    border-radius: 50%;
+    margin: 3rem 0;
+  }
+
+  .testimonials__container--job {
+    color: $grayish-blue;
+    display: block;
+    margin-top: 2rem;
+  }
+}
