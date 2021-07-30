@@ -1,0 +1,46 @@
+.footer {
+  background-color: $cyan;
+  padding: 3rem 0;
+  text-align: center;
+
+  .logo {
+    filter: invert(70%) sepia(40%) saturate(650%) hue-rotate(116deg) brightness(94%) contrast(92%);
+    font-family: $title-font;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  margin:0 auto 6rem;
+
+  @include tablet {
+    width: 35%;
+  }
+
+  @include desktop {
+    width: 20%;
+  }
+}
+
+.footer__nav a {
+  color: $dark-moderate-cyan;
+  flex-basis: calc(33.3% - 2rem);
+}
+
+.footer__social-media {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 75%;
+
+  @include tablet {
+    width: 35%;
+  }
+
+  @include desktop {
+    width: 20%;
+  }
+}

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./build/css/app.css">
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
+
   <body>
     <header class="header">
       <div class="header__content">
@@ -28,7 +29,6 @@
     </header>
 
     <main class="main">
-
       <div class="main__transform">
         <section class="main__container content">
           <h2>Transform your brand</h2>
@@ -74,27 +74,6 @@
       </div>
     </main>
 
-    <div class="images__four">
-      <picture>
-        <source src="build/img/desktop/image-gallery-milkbottles.webp" media="(min-width: 768px)">
-        <img src="build/img/mobile/image-gallery-milkbottles.webp" alt="milk bottles">
-      </picture>
-
-      <picture>
-        <source src="build/img/desktop/image-gallery-orange.webp" media="(min-width: 768px)">
-        <img src="build/img/mobile/image-gallery-orange.webp" alt="orange">
-      </picture>
-
-      <picture>
-        <source src="build/img/desktop/image-gallery-cone.webp" media="(min-width: 768px)">
-        <img src="build/img/mobile/image-gallery-cone.webp" alt="cone">
-      </picture>
-
-      <picture>
-        <source src="build/img/desktop/image-gallery-sugarcubes.webp" media="(min-width: 768px)">
-        <img src="build/img/mobile/image-gallery-sugar-cubes.webp" alt="sugar cubes">
-      </picture>
-    </div>
     <section class="testimonials mg-top-bot-5">
       <h2 class="text-center">Client Testimonials</h2>
       <div class="testimonials__content content text-center">
@@ -105,6 +84,7 @@
           <cite class="testimonials__container--name">Emily R.</cite>
           <span class="testimonials__container--job">Marketing Director</span>
         </div>
+        
         <div class="testimonials__container mg-top-bot-5">
           <img src="build/img/image-thomas.webp" alt="image Thomas">
           <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a 
@@ -112,6 +92,7 @@
           <cite class="testimonials__container--name">Tomas S.</cite>
           <span class="testimonials__container--job">Chief Operating Officer</span>
         </div>
+        
         <div class="testimonials__container mg-top-bot-5">
           <img src="build/img/image-jennie.webp" alt="image jennie">
           <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
@@ -121,29 +102,44 @@
         </div>
       </div>
     </section>
-    <!--
-    Client testimonials
 
-    Emily R.
-    Marketing Director
+    <div class="images__four">
+      <picture>
+        <source srcset="build/img/desktop/image-gallery-milkbottles.webp" media="(min-width: 768px)">
+        <img src="build/img/mobile/image-gallery-milkbottles.webp" alt="milk bottles">
+      </picture>
 
-    Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-    Thomas S.
-    Chief Operating Officer
+      <picture>
+        <source srcset="build/img/desktop/image-gallery-orange.webp" media="(min-width: 768px)">
+        <img src="build/img/mobile/image-gallery-orange.webp" alt="orange">
+      </picture>
 
-    
-    Jennie F.
-    Business Owner
+      <picture>
+        <source srcset="build/img/desktop/image-gallery-cone.webp" media="(min-width: 768px)">
+        <img src="build/img/mobile/image-gallery-cone.webp" alt="cone">
+      </picture>
 
-    About
-    Services
-    Projects
-    Contact
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      <picture>
+        <source srcset="build/img/desktop/image-gallery-sugarcubes.webp" media="(min-width: 768px)">
+        <img src="build/img/mobile/image-gallery-sugar-cubes.webp" alt="sugar cubes">
+      </picture>
     </div>
-  -->
+
+    <footer class="footer">
+      <object class="logo" data="build/img/logo.svg" type="image/svg+xml">
+        <img src="build/img/logo.svg" alt="Logo">
+      </object>
+      <nav class="footer__nav">
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Projects</a>
+      </nav>
+      <div class="footer__social-media">
+        <a href="#"><img src="build/img/icon-facebook.svg" alt="icon facebook"></a>
+        <a href="#"><img src="build/img/icon-instagram.svg" alt="icon instagram"></a>
+        <a href="#"><img src="build/img/icon-twitter.svg" alt="icon twitter"></a>
+        <a href="#"><img src="build/img/icon-pinterest.svg" alt="icon pinterest"></a>
+      </div>
+    </footer>
   </body>
 </html>
