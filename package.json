@@ -15,12 +15,17 @@
   "author": "Alejandro Curiel",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "cssnano": "^5.0.7",
     "dart-sass": "^1.25.0",
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-notify": "^4.0.0",
+    "gulp-postcss": "^9.0.0",
     "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-webp": "^4.0.1",
+    "postcss": "^8.3.6",
     "sass": "^1.35.2"
   }
 }

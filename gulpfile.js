@@ -4,6 +4,10 @@ const sass = require('gulp-sass')(require('sass'));
 const imagemin = require('gulp-imagemin');
 const notify = require('gulp-notify');
 const webp = require('gulp-webp');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const sourcemaps = require('gulp-sourcemaps');
 sass.compiler = require('sass');
 
 //Direcciones mas usadas en funciones
@@ -15,12 +19,15 @@ const paths = {
 //Secciones de funciones para la optimizacion y facilidad de tareas
 function compilarSass(){
     return src(paths.url_scss)
+        .pipe( sourcemaps.init())
         .pipe( sass())
+        .pipe( postcss( [autoprefixer(), cssnano()] ))
+        .pipe( sourcemaps.write('.'))
         .pipe( dest("./build/css"))
 }
 
 function minificarImagenes(){
-    return src([paths.url_images, paths.url_images_svg])
+    return src( [paths.url_images, paths.url_images_svg] )
         .pipe( imagemin())
         .pipe( dest('./build/img'))
         .pipe( notify("Imagen Minificada"))
@@ -48,6 +55,7 @@ function expandirCss(){
         }))
         .pipe( dest('./build/css'))
 }
+
 
 function watchArchivos(){
     watch(paths.url_scss, compilarSass);
